@@ -1,9 +1,17 @@
+// Exercise1_VariablesInputOutput/Program.cs
 using System;
 
 class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
-        Console.WriteLine("Hello World! This is the Exercise1 Project.");
+        Console.Write("What is your name? ");
+        string name = Console.ReadLine();
+
+        Console.Write("How old are you? ");
+        string ageInput = Console.ReadLine();
+        int age = int.Parse(ageInput);
+
+        Console.WriteLine($"Hello, {name}! You are {age} years old.");
     }
-}
+}  
